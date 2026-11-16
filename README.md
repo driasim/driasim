@@ -1,64 +1,64 @@
 # Ibrahim Aliyu Saddique (`@driasim`)
 
-**AI Systems & Agent Infrastructure Engineer**  
-Specializing in **production LLM agents**, multi-turn evaluation harnesses, MCP tool ecosystems, shared organizational memory, and long-running sandboxed execution.
+**Software Systems Engineer & Distributed Architect**  
+*Building resilient distributed backends, developer infrastructure, low-latency runtimes, and autonomous execution boundaries.*
 
 ---
 
-### 🛠️ What I Focus On (The Unspoken Layers of Production Agents)
+### 🏛️ Engineering Philosophy: Beyond the AI Hype
 
-Most agent demos work in a 3-turn sandbox. In production, real agents fail at the boundaries:
-* **Evaluation & Regression Detection:** How to mathematically and deterministically know whether an agent got better or worse when a prompt, tool signature, or foundational model changes.
-* **Internal Monoagents & Shared Memory:** Connecting disparate corporate silos through a resilient monoagent architecture with episodic, working, and organizational memory.
-* **Long-Running & Sandboxed Agents:** Resilient execution that outlives single HTTP requests—durable checkpointing, background schedules, and sandboxed runtimes.
-* **Tool & MCP Surfaces:** Hardening Model Context Protocol (MCP) servers with validation schemas, circuit-breakers, and fallback policies against runaway tool loops.
-* **Cost & Observability Telemetry:** Real-time token budgets, latency profiling, OpenTelemetry trajectory tracing, and per-user cost attribution.
+Anyone can call an API or wrap an LLM in a prompt. Real software engineering begins when these non-deterministic systems touch production infrastructure:
+
+* **Fault Tolerance & Circuit Breaking:** Distributed failure domains, cascading timeout protection, entropy tracking, and automated circuit breakers for unreliable external dependencies.
+* **Process Sandboxing & Boundary Security:** Subprocess isolation, abstract syntax tree (AST) static inspection, resource quotas, and zero-trust execution for untrusted workloads.
+* **Protocol & Systems Engineering:** Translating heterogeneous API standards (OpenAPI, Swagger, JSON-RPC 2.0, MCP, gRPC, SSE) into clean, type-safe developer interfaces.
+* **Durable State Machines:** Workflows that outlive single HTTP requests—durable SQLite/Postgres checkpointing, crash recovery, and multi-tenant task isolation.
+* **FinOps & Telemetry at Scale:** OpenTelemetry distributed tracing, millisecond latency profiling, and real-time budget enforcement gates.
 
 ---
 
-### 🚀 Production Agent Infrastructure Ecosystem
+### 📦 Systems & Infrastructure Open Source Projects
 
-A suite of 10 production-grade, tested, and cloneable repositories solving foundational problems in enterprise agent engineering:
+A suite of 10 production-tested software systems, developer tools, and distributed infrastructure packages:
 
-| Repository | Domain | Architecture & Highlights |
+| Project | Core Domain | Architectural Focus & Technical Highlights |
 | :--- | :--- | :--- |
-| [**`openapi-to-mcp`**](https://github.com/driasim/openapi-to-mcp) | **Tooling & MCP** | Zero-boilerplate bridge converting any OpenAPI/Swagger REST API into native MCP tools for Claude Desktop, Cursor, and AI agents. |
-| [**`agent-eval-harness`**](https://github.com/driasim/agent-eval-harness) | **Evals & CI** | Trajectory evaluation engine detecting runaway retry loops, tool schema regressions, and token/cost drift before deployment. |
-| [**`agent-vcr`**](https://github.com/driasim/agent-vcr) | **Testing & Mocks** | Deterministic record & replay mock engine allowing multi-turn agent CI integration tests to run offline in milliseconds for $0. |
-| [**`monoagent-runtime`**](https://github.com/driasim/monoagent-runtime) | **Kernel & Runtime** | Enterprise monoagent kernel supporting durable task checkpoints, hierarchical shared memory, MCP routing, and OTel telemetry. |
-| [**`agent-sandbox-daemon`**](https://github.com/driasim/agent-sandbox-daemon) | **Security & Sandboxing** | Safe code execution environment with static AST security analysis (blocking dangerous imports), timeouts, and process boundaries. |
-| [**`hitl-approval-gateway`**](https://github.com/driasim/hitl-approval-gateway) | **Safety & Governance** | Policy middleware that intercepts destructive/financial tool calls and halts execution until human operator sign-off. |
-| [**`agent-finops-sentinel`**](https://github.com/driasim/agent-finops-sentinel) | **FinOps & Cost Control** | Real-time token metering and budget enforcement that alerts at 80% soft thresholds and triggers hard cut-offs to prevent runaway spend. |
-| [**`llm-smart-router`**](https://github.com/driasim/llm-smart-router) | **Routing & Fallback** | Heuristic complexity classifier routing simple queries to cheap models and complex reasoning to flagship tiers with automatic failover. |
-| [**`graph-memory-engine`**](https://github.com/driasim/graph-memory-engine) | **Memory Architecture** | Temporal knowledge graph and episodic memory engine with multi-hop BFS traversal and relationship superseding. |
-| [**`browser-intent-worker`**](https://github.com/driasim/browser-intent-worker) | **Browser Automation** | Semantic accessibility tree extractor compressing noisy HTML by 85%+ into high-reliability interactive intent targets. |
+| [**`openapi-to-mcp`**](https://github.com/driasim/openapi-to-mcp) | **Protocol Engineering** | Zero-boilerplate JSON-RPC 2.0 stdio engine auto-generating Model Context Protocol tools from OpenAPI 3.x/Swagger specs. |
+| [**`agent-sandbox-daemon`**](https://github.com/driasim/agent-sandbox-daemon) | **Systems & Security** | Sandboxed execution daemon with AST static security auditing (blocking socket/subprocess escapes), resource limits, and timeout guards. |
+| [**`agent-eval-harness`**](https://github.com/driasim/agent-eval-harness) | **Systems Reliability** | Deterministic trajectory evaluation harness with invariant state assertion, entropy loop detection, and economic drift tracking. |
+| [**`agent-vcr`**](https://github.com/driasim/agent-vcr) | **Developer Tooling** | Deterministic cassette recording and mock engine allowing non-deterministic distributed tests to run offline in <5ms for $0. |
+| [**`monoagent-runtime`**](https://github.com/driasim/monoagent-runtime) | **Distributed Runtimes** | Stateful orchestration kernel with multi-step durable checkpointing, tiered shared memory, circuit breakers, and OpenTelemetry instrumentation. |
+| [**`hitl-approval-gateway`**](https://github.com/driasim/hitl-approval-gateway) | **Policy & Governance** | Rule-driven authorization gateway that intercepts high-risk system/financial actions and enforces human approval workflows. |
+| [**`agent-finops-sentinel`**](https://github.com/driasim/agent-finops-sentinel) | **FinOps & Cost Control** | Real-time budget enforcement service tracking multi-tenant compute burn rates with soft threshold alerts and hard circuit cut-offs. |
+| [**`llm-smart-router`**](https://github.com/driasim/llm-smart-router) | **Traffic & Routing** | Structural complexity classifier and fallback proxy routing traffic across tiers with automated failover cascades. |
+| [**`graph-memory-engine`**](https://github.com/driasim/graph-memory-engine) | **Graph Topologies** | Temporal knowledge graph engine with multi-hop BFS traversal, relationship invalidation, and state superseding. |
+| [**`browser-intent-worker`**](https://github.com/driasim/browser-intent-worker) | **Web & Automation** | Semantic DOM tree reduction engine compressing bloated HTML by 85%+ into reliable, accessible interactive state models. |
 
 ---
 
-### 🛡️ Production War Stories & Architecture Trade-offs
+### 🛡️ Production Engineering Patterns & Post-Mortems
 
-#### 1. The Runaway Tool-Call Loop & Circuit Breaker Pattern
-* **The Failure:** A refactored internal database query tool started returning partial empty arrays instead of explicit errors. The agent entered a silent recursive retry loop across 42 consecutive turns trying alternative query parameters, burning $78 of API tokens on a single background request before hitting the global timeout.
-* **The Fix:** Implemented a **Tool Execution Circuit Breaker** in the agent runtime. The harness tracks tool invocation entropy, deduplicates identical argument payloads, and trips an automated human-in-the-loop (HITL) interrupt if the same tool fails or returns zero state delta more than 3 times consecutively.
+#### 1. Circuit Breakers Over Exponential Backoff in Infinite Loops
+* **The Failure:** An internal integration tool started returning empty payloads (`[]`) during a partial database partition. The upstream worker interpreted this as "query succeeded with zero results" and looped 42 consecutive times trying alternative filter arguments, burning thousands of compute units before hitting hard timeouts.
+* **The Solution:** Built a **Tool Execution Circuit Breaker** tracking payload entropy and argument hashes. If a worker calls the same service 3 consecutive times with zero state delta, the circuit immediately trips and halts execution.
 
 #### 2. The Model Upgrade "Silent Regression" Trap
-* **The Failure:** Upgrading from an earlier foundational model to a newer, higher-benchmark release improved general MMLU reasoning by 4%, but degraded strict JSON schema tool adherence by 18% in multi-step enterprise workflows.
-* **The Fix:** Built `agent-eval-harness` to run replay evals on 250+ production trajectories with golden tool assertions, semantic diffing, and cost-per-successful-resolution ratios before any prompt or model deployment.
+* **The Failure:** Swapping foundational model versions improved general reasoning benchmarks by 4%, but broke strict JSON schema validation by 18% in multi-step enterprise workflows due to altered formatting priors.
+* **The Solution:** Implemented `agent-eval-harness` to run regression diffs on 250+ production trajectories with golden schema assertions, diffing latency, cost, and tool call accuracy before releasing prompt or model updates.
 
-#### 3. Organizational Adoption: Why Internal Assistants Fail
-* **Observation:** Building a general-purpose chat interface resulted in high initial excitement followed by 80% silent abandonment within 4 weeks. Non-technical staff didn't want to prompt-engineer their queries.
-* **The Shift:** Pivoted to **headless monoagents triggered via native workflows** (PR reviews, daily scheduled Slack briefings, automated Jira triage). Giving agents narrow, deterministic playbooks with explicit operational memory increased sustained weekly active utilization by 340%.
+#### 3. Why Internal Workflow Tools Get Abandoned
+* **Observation:** Deploying free-form chat interfaces for technical workflows consistently results in a novelty spike followed by 80% abandonment within 4 weeks. Users don't want to write essays to execute repeatable work.
+* **The Solution:** Shifted to **headless, event-driven monoagents embedded into existing developer pipelines** (CI webhook triggers, scheduled SRE cron jobs, Jira automation) with narrow, deterministic playbooks.
 
 ---
 
-### 🧰 Technical Stack & Tooling
+### 🧰 Technical Stack & Systems Competencies
 
-* **Agent Runtimes & Frameworks:** Custom Kernel architectures, LangGraph, LlamaIndex, LiteLLM
-* **Protocol & Interoperability:** Model Context Protocol (MCP), OpenAPI / Swagger, SSE, WebSocket streaming
-* **Evaluations & Testing:** DeepEval, Trajectory Replay, Pytest, Deterministic State Assertions, VCR mocks
-* **Memory & Storage:** PostgreSQL + `pgvector`, Redis (session buffers), Knowledge Graphs, SQLite durable logs
-* **Observability & Ops:** OpenTelemetry, Prometheus, Langfuse, Grafana, Docker/Cloud Sandboxes
-* **Languages:** Python (FastAPI, Pydantic, AsyncIO), TypeScript / Node.js, Go
+* **Languages:** Python (FastAPI, Pydantic, AsyncIO), TypeScript / Node.js, Go, SQL
+* **Protocols & RPC:** Model Context Protocol (MCP), JSON-RPC 2.0, OpenAPI / Swagger, REST, WebSockets, Server-Sent Events (SSE)
+* **Architecture & Patterns:** State Machines, Event-Driven Architecture, Circuit Breakers, AST Static Analysis, Multi-Tenant Isolation
+* **Storage & Graphs:** PostgreSQL + `pgvector`, Redis (caching / rate limiting), Knowledge Graphs (BFS/DFS), SQLite durable journals
+* **Reliability & DevOps:** OpenTelemetry, Prometheus, Grafana, Docker, GitHub Actions CI/CD, Pytest
 
 ---
 
