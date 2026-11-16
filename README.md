@@ -1,7 +1,7 @@
 # Ibrahim Aliyu Saddique
 
-**Full-Stack, Mobile & Systems Engineer**  
-*Building apps people actually use and the backend infrastructure that keeps them running.*
+**Full-Stack & Mobile Developer**  
+*Building apps people actually use and the backend services that keep them running.*
 
 [GitHub](https://github.com/driasim) • [Email](mailto:ibraheemaliyu32@gmail.com)
 
@@ -9,7 +9,7 @@
 
 ### About Me
 
-I’m a software engineer who builds across the whole stack: user-facing web applications, cross-platform mobile apps on iOS and Android, and the distributed backend services powering them. 
+I’m a software developer who builds across the whole stack: user-facing web applications, cross-platform mobile apps on iOS and Android, and the backend services powering them. 
 
 Whether I’m tuning a smooth mobile screen transition, handling offline SQLite synchronization, or writing execution sandboxes and background worker queues that don't choke under load, I focus on software that is fast, resilient, and simple to maintain.
 
@@ -19,7 +19,7 @@ Whether I’m tuning a smooth mobile screen transition, handling offline SQLite 
 
 * **📱 Mobile (iOS & Android):** Cross-platform apps using React Native and Flutter. I pay close attention to offline resilience, optimistic UI updates, local storage (SQLite, MMKV), and keeping memory and battery draw minimal.
 * **💻 Web Applications:** Production web apps using React, Next.js, and TypeScript. I care about snappy load times, clean component boundaries, and real-time WebSocket state that doesn't desync.
-* **⚙️ Backends & Distributed Systems:** High-throughput APIs, background workers, and microservices in Python (FastAPI), Node.js, and Go. I design around PostgreSQL, Redis caching, event-driven task queues, and clear failure domains.
+* **⚙️ Backends & API Services:** High-throughput APIs, background workers, and microservices in Python (FastAPI), Node.js, and Go. I design around PostgreSQL, Redis caching, event-driven task queues, and clear failure domains.
 * **🛠️ Developer Tooling & Agent Runtimes:** The critical plumbing around autonomous workflows—safe code execution sandboxes, REST-to-MCP bridges, deterministic record/replay testing harnesses, and spend-guard sentinels.
 
 ---
@@ -43,16 +43,16 @@ Here are 10 production-tested tools and systems I built, documented, and publish
 
 ---
 
-### How I Think About Engineering
+### How I Think About Development
 
 #### 1. Offline-first isn't optional on mobile
-People use apps in elevators, basements, and on spotty train Wi-Fi. If an app freezes or dumps user input because a network request timed out, that’s an engineering flaw, not a user mistake. Optimistic UI with reliable local queuing makes all the difference.
+People use apps in elevators, basements, and on spotty train Wi-Fi. If an app freezes or dumps user input because a network request timed out, that’s a bug, not a user mistake. Optimistic UI with reliable local queuing makes all the difference.
 
 #### 2. Protect your dependencies (and yourself) with circuit breakers
 External services and APIs eventually slow down, return empty arrays, or fail outright. If your backend naively retries in an unbounded loop, it will lock worker threads and burn budget. Circuit breakers that track consecutive empty or failing responses prevent small glitches from becoming full outages.
 
 #### 3. Meet users where they already spend their time
-Engineers and team members rarely want another separate portal or complex dashboard to check. The most adopted tools are headless—they trigger on a GitHub PR, post an update into Slack, or run as a background cron job that quietly gets work done.
+Developers and team members rarely want another separate portal or complex dashboard to check. The most adopted tools are headless—they trigger on a GitHub PR, post an update into Slack, or run as a background cron job that quietly gets work done.
 
 ---
 
