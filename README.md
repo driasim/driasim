@@ -20,6 +20,7 @@ Most agent demos work in a 3-turn sandbox. In production, real agents fail at th
 
 | Repository | Focus & Architecture | Highlights |
 | :--- | :--- | :--- |
+| [**`openapi-to-mcp`**](https://github.com/driasim/openapi-to-mcp) | **Zero-Boilerplate REST-to-MCP Bridge** | Instantly converts any OpenAPI 3.x / Swagger 2.0 REST API into a Model Context Protocol (MCP) server for Claude Desktop, Cursor, and AI agents. |
 | [**`agent-eval-harness`**](https://github.com/driasim/agent-eval-harness) | **Regression & Trajectory Evaluation Framework** | Deterministic trajectory assertions, tool-call schema diffs, semantic LLM judges, token/cost drift benchmarks. |
 | [**`monoagent-runtime`**](https://github.com/driasim/monoagent-runtime) | **Production Enterprise Agent Kernel** | Long-running task queue, shared hierarchical memory (Postgres/pgvector), MCP client/server tooling, OpenTelemetry tracing. |
 
