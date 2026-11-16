@@ -16,13 +16,22 @@ Most agent demos work in a 3-turn sandbox. In production, real agents fail at th
 
 ---
 
-### 🚀 Flagship Open Source Projects
+### 🚀 Production Agent Infrastructure Ecosystem
 
-| Repository | Focus & Architecture | Highlights |
+A suite of 10 production-grade, tested, and cloneable repositories solving foundational problems in enterprise agent engineering:
+
+| Repository | Domain | Architecture & Highlights |
 | :--- | :--- | :--- |
-| [**`openapi-to-mcp`**](https://github.com/driasim/openapi-to-mcp) | **Zero-Boilerplate REST-to-MCP Bridge** | Instantly converts any OpenAPI 3.x / Swagger 2.0 REST API into a Model Context Protocol (MCP) server for Claude Desktop, Cursor, and AI agents. |
-| [**`agent-eval-harness`**](https://github.com/driasim/agent-eval-harness) | **Regression & Trajectory Evaluation Framework** | Deterministic trajectory assertions, tool-call schema diffs, semantic LLM judges, token/cost drift benchmarks. |
-| [**`monoagent-runtime`**](https://github.com/driasim/monoagent-runtime) | **Production Enterprise Agent Kernel** | Long-running task queue, shared hierarchical memory (Postgres/pgvector), MCP client/server tooling, OpenTelemetry tracing. |
+| [**`openapi-to-mcp`**](https://github.com/driasim/openapi-to-mcp) | **Tooling & MCP** | Zero-boilerplate bridge converting any OpenAPI/Swagger REST API into native MCP tools for Claude Desktop, Cursor, and AI agents. |
+| [**`agent-eval-harness`**](https://github.com/driasim/agent-eval-harness) | **Evals & CI** | Trajectory evaluation engine detecting runaway retry loops, tool schema regressions, and token/cost drift before deployment. |
+| [**`agent-vcr`**](https://github.com/driasim/agent-vcr) | **Testing & Mocks** | Deterministic record & replay mock engine allowing multi-turn agent CI integration tests to run offline in milliseconds for $0. |
+| [**`monoagent-runtime`**](https://github.com/driasim/monoagent-runtime) | **Kernel & Runtime** | Enterprise monoagent kernel supporting durable task checkpoints, hierarchical shared memory, MCP routing, and OTel telemetry. |
+| [**`agent-sandbox-daemon`**](https://github.com/driasim/agent-sandbox-daemon) | **Security & Sandboxing** | Safe code execution environment with static AST security analysis (blocking dangerous imports), timeouts, and process boundaries. |
+| [**`hitl-approval-gateway`**](https://github.com/driasim/hitl-approval-gateway) | **Safety & Governance** | Policy middleware that intercepts destructive/financial tool calls and halts execution until human operator sign-off. |
+| [**`agent-finops-sentinel`**](https://github.com/driasim/agent-finops-sentinel) | **FinOps & Cost Control** | Real-time token metering and budget enforcement that alerts at 80% soft thresholds and triggers hard cut-offs to prevent runaway spend. |
+| [**`llm-smart-router`**](https://github.com/driasim/llm-smart-router) | **Routing & Fallback** | Heuristic complexity classifier routing simple queries to cheap models and complex reasoning to flagship tiers with automatic failover. |
+| [**`graph-memory-engine`**](https://github.com/driasim/graph-memory-engine) | **Memory Architecture** | Temporal knowledge graph and episodic memory engine with multi-hop BFS traversal and relationship superseding. |
+| [**`browser-intent-worker`**](https://github.com/driasim/browser-intent-worker) | **Browser Automation** | Semantic accessibility tree extractor compressing noisy HTML by 85%+ into high-reliability interactive intent targets. |
 
 ---
 
@@ -46,8 +55,8 @@ Most agent demos work in a 3-turn sandbox. In production, real agents fail at th
 
 * **Agent Runtimes & Frameworks:** Custom Kernel architectures, LangGraph, LlamaIndex, LiteLLM
 * **Protocol & Interoperability:** Model Context Protocol (MCP), OpenAPI / Swagger, SSE, WebSocket streaming
-* **Evaluations & Testing:** DeepEval, Ragas, Trajectory Replay, Pytest, Deterministic State Assertions
-* **Memory & Storage:** PostgreSQL + `pgvector`, Redis (session buffers), ChromaDB, SQLite durable logs
+* **Evaluations & Testing:** DeepEval, Trajectory Replay, Pytest, Deterministic State Assertions, VCR mocks
+* **Memory & Storage:** PostgreSQL + `pgvector`, Redis (session buffers), Knowledge Graphs, SQLite durable logs
 * **Observability & Ops:** OpenTelemetry, Prometheus, Langfuse, Grafana, Docker/Cloud Sandboxes
 * **Languages:** Python (FastAPI, Pydantic, AsyncIO), TypeScript / Node.js, Go
 
